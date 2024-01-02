@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 2 of CSS</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 
+        html {
+            width: 500px;
+        } */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: aqua;
+            /* color: green !important; */
+            color: green;
+        }
+
+        /* p {
+        background-color: aqua;
+        color: red;
+    } */
+
+        /* span */
+        div#border {
+            margin: 16px;
+            margin: 16px 32px 48px 72px;
+            margin: 16px 72px;
+            margin: 16px 50px 72px;
+            /* margin-top: 16px;
+        margin-right: 32px;
+        margin-bottom: 48px;
+        margin-left: 72px; */
+            /* padding: 16px; */
+            padding: 16px 32px 48px 72px;
+            border: 2px double red;
+            /* border: 10px dashed green; */
+            /* border-width: 10px;
+        border-style: dashed;
+        border-color: green;
+        border-bottom: 50px solid yellow;
+        border-right: 50px solid aqua;
+        font-size: xx-large;
+        font-size: 10px;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic; */
+            /* font-variant: small-caps; */
+            /* line-height: 1; */
+
+            display: inline-block;
+            /* text-align: justify;
+        text-align: center; */
+            text-decoration: line-through;
+            text-decoration: underline;
+            text-transform: uppercase;
+            /* text-transform: uppercase; */
+            text-shadow: -10px -20px 1px green;
+        }
+
+        div#shadow {
+            box-shadow: 20px -10px 5px 6px black;
+        }
+
+        .same {
+            background-color: yellow;
+            color: red;
+            border: 2px solid green;
+            margin: 16px;
+            padding: 16px;
+        }
+
+        header {
+            /* background-image: url("https://tpc.googlesyndication.com/simgad/18312513896247907785");
+            background-image: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"); */
+            height: 100vh;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: 0% 0%;
+            background-position: bottom;
+            background-size: contain;
+            background-size: cover;
+            background-origin: border-box;
+            background-attachment: fixed;
+            background-attachment: scroll;
+            background-color: yellow;
+            position: static;
+            position: fixed;
+            width: 100%;
+            /* top: 20%; */
+
+        }
+
+        .circle {
+            width: 200px;
+            /* min-width: 500px; */
+            height: 200px;
+            background-color: red;
+            margin: 10px;
+            /* border: 5px solid green; */
+            /* border-radius: 50%; */
+        }
+
+        article {
+            background-color: green;
+            width: 50%;
+            width: 200px;
+            font-size: 20px;
+        }
+
+        address {
+            background-color: yellow;
+            width: 30%;
+            width: 50vw;
+
+            font-size: 50px;
+            font-size: 48px;
+            font-size: 2em;
+            font-size: 5vw;
+        }
+
+        input#male {
+            accent-color: red;
+        }
+
+        #search-container {
+            width: 500px;
+            position: relative;
+        }
+
+        #search-container input {
+            width: 100%;
+        }
+
+        #search-container span {
+            position: absolute;
+            right: 4px;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="border">Lorem ipsum
+
+        dolor sit amet, consectetur adipisicing elit. Modi, eligendi. Cumque dolorum molestias temporibus
+
+        ducimus corporis itaque perspiciatis? Explicabo quasi, repellendus id culpa commodi doloribus corporis. Odio
+        aliquid soluta quisquam.
+    </div>
+
+    <span>Lorem ipSMum
+
+        <!-- dolor sit amet, consectetur adipisicing elit. Modi, eligendi. Cumque dolorum molestias temporibus
+
+        ducimus corporis itaque perspiciatis? Explicabo quasi, repellendus id culpa commodi doloribus corporis. Odio
+        aliquid soluta quisquam. -->
+    </span>
+
+    <!-- <div id="shadow">Lorem</div>
+
+    <div class="same">1</div>
+    <div class="same">2</div>
+    <div class="same">3</div>
+    <section class="same">4</section>
+    <article class="same">5</article>
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div> -->
+
+    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis temporibus magnam atque enim maxime,
+        iusto totam, voluptatibus doloribus possimus, velit sed commodi ad explicabo dolorem! Expedita ullam inventore
+        laudantium amet!
+
+        <address>this is address</address>
+    </article>
+
+    Male <input type="checkbox" id="male">
+
+    <div id="search-container">
+        <input type="password" placeholder="Enter your password">
+        <span>Show</span>
+    </div>
+
+</body>
+
+</html>
