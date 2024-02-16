@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 7 of CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto 90vh auto;
+            background-color: aqua;
+            grid-gap: 1rem;
+            /* grid-gap: 1rem 5rem; */
+            /* grid-row-gap: 1rem;
+            grid-column-gap: 5rem; */
+        }
+
+        header {
+            background-color: rgb(128, 255, 0);
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        aside {
+            background-color: rgb(255, 247, 0);
+        }
+
+        main {
+            background-color: rgb(218, 108, 203);
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        footer {
+            background-color: rgb(255, 191, 0);
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+    <!-- <script>
+        console.log("hello world");
+    </script> -->
+    <!-- <script src="./script.js"></script> -->
+</head>
+
+<body>
+
+    <!-- <h1>Class 7 of CSS</h1> -->
+    <header>
+        <img src="" alt="logo">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+    <aside>aside</aside>
+    <main>main</main>
+    <footer>footer</footer>
+
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        console.log("hello world");
+        console.error("hello world");
+        var name = "ali haider";
+        console.error("hello ", name);
+    </script>
+</body>
+
+</html>

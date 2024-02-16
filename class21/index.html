@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 7 of JS</title>
+  </head>
+  <body>
+    <script>
+      const ages = [32, 33, 16, 40];
+      const students = [
+        { name: "hasnain", age: 18, id: 1 },
+        { name: "haider", age: 20, id: 2 },
+        { name: "haider", age: 23, id: 3 },
+      ];
+
+      //   function checkAdult(age) {
+      //     return age >= 18;
+      //   }
+
+      function checkAdult(student, index, array) {
+        // console.log(student, index, array);
+        // return false;
+        // return student.id === 2;
+
+        if (student.name === "haider" || student.age === 20) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      //   const filteredAges = ages.filter(checkAdult);
+      const filteredStudents = students.filter(checkAdult);
+      //   const findStudent = students.find(checkAdult);
+
+      //   console.log(ages, filteredAges);
+      //   console.log(filteredStudents[0]);
+      //   console.log(findStudent);
+
+      //   class Abc {
+      //     checkAgeA(age) {
+      //       return age > 18;
+      //     }
+
+      //     checkAgeB = (age) => {
+      //       return age > 18;
+      //     };
+      //   }
+
+      //   console.log(checkAge);
+      //   console.log(checkAge());
+
+      //   const numbers = [65, 44, 12, 4];
+      //   const newArr = numbers.map(myFunction);
+
+      //   console.log(numbers);
+      //   console.log(newArr);
+
+      //   function myFunction(num) {
+      //     return num ** num;
+      //   }
+
+      //   console.log("students: ", students);
+      //   console.log("filteredStudents", filteredStudents);
+
+      //   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //   const a = fruits.push("xyz");
+      //   const b = fruits.push("bbb");
+      //   fruits.push("Kiwi", "abc");
+      // fruits.pop();
+      // fruits.pop();
+
+      // fruits.shift();
+      // fruits.shift();
+      // fruits.unshift("abc");
+
+      //   console.log(a);
+      //   console.log(b);
+      //   console.log(fruits);
+
+      //   const numbers = [65, 44, 12, 4];
+      const names = ["ali", "haider"];
+      //   const newArr = numbers.map(myFunction);
+      //   const newArr = names.map(myFunction);
+
+      //   function myFunction(item, index, array) {
+      //     console.log(item, index, array);
+      //     return item ** item;
+      //   }
+
+      function myFunction(item, index, array) {
+        // console.log(item, index, array);
+        return item.toUpperCase();
+      }
+
+      //   console.log(numbers);
+      //   console.log(names);
+      //   console.log(newArr);
+
+      let sum = 0;
+      //   for (let index = 0; index < numbers.length; index++) {
+      //     const element = numbers[index];
+
+      //     // console.log("sum: ", sum, "element:", element);
+      //     // sum = sum + element;
+      //     sum += element;
+      //   }
+
+      //   const total = numbers.reduce(
+      //     (previousValue, currentValue, currentIndex, array) => {
+      //       console.log(previousValue, currentValue, currentIndex, array);
+      //       return previousValue + currentValue;
+      //     },
+      //     0
+      //   );
+      //   const total = numbers.reduce(
+      //     (previousValue, currentValue) => previousValue + currentValue,
+      //     0
+      //   );
+
+      //   console.log("Sum: ", sum);
+      //   console.log("total: ", total);
+      const cars = [
+        {
+          make: "audi",
+          model: "r8",
+          year: "2012",
+        },
+        {
+          make: "audi",
+          model: "rs5",
+          year: "2013",
+        },
+        {
+          make: "ford",
+          model: "mustang",
+          year: "2012",
+        },
+        {
+          make: "ford",
+          model: "fusion",
+          year: "2015",
+        },
+        {
+          make: "kia",
+          model: "optima",
+          year: "2012",
+        },
+      ];
+
+      //   const result = cars.reduce(function (r, a) {
+      //     r[a.year] = r[a.year] || [];
+      //     r[a.year].push(a);
+      //     return r;
+      //   }, Object.create(null));
+
+      //   console.log(result);
+
+      //   const result = cars.forEach(myFunction);
+
+      function myFunction(item, index, array) {
+        console.log(item, index, array);
+
+        item.make = "audi";
+        item.abc = "abc";
+        delete item.year;
+        // return item;
+      }
+      //   console.log(cars);
+      //   console.log(result);
+
+      //   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //   fruits.sort();
+      //   console.log(fruits);
+
+      //   const numbers = [65, 44, 12, 4];
+      const numbers = [6, 4, 2, 4, 3, 7, 9];
+
+      //   numbers.sort();
+      //   numbers.sort((a, b) => {
+      //     console.log(a, b);
+      //     // return a - b;
+      //     return b - a;
+      //   });
+      //   numbers.sort((a, b) =>  b - a);
+
+      //   numbers.sort().reverse();
+      //   numbers.reverse()
+
+      //   console.log(numbers);
+
+      //   console.log("    ali    haider   ".trim().toUpperCase());
+
+      function capitalizeFirstLetterOfEveryWord(string) {
+        const nameArray = string.split(" ");
+
+        const array = nameArray.map((name) => {
+          // console.log(name, name[0].toUpperCase(), name.slice(1, name.length));
+          const capitalize = name[0].toUpperCase() + name.slice(1, name.length);
+
+          //   console.log(capitalize);
+          return capitalize;
+        });
+
+        return array.join(" ");
+      }
+
+      console.log(capitalizeFirstLetterOfEveryWord("ali haider"));
+      console.log(capitalizeFirstLetterOfEveryWord("ali Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, magnam dolorem. Delectus repellendus cumque, esse obcaecati placeat voluptas sequi. Officiis earum cum et id molestiae placeat recusandae nihil dolorem perspiciatis?"));
+      //   console.log(array.join(" "));
+    </script>
+    
+  </body>
+</html>

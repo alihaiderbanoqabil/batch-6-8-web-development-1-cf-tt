@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 6 of JS</title>
+  </head>
+  <body>
+    <script>
+      //   console.log("Hello");
+      const studentInfo = {
+        fullName: "ali haider",
+        age: 25,
+        greet: function () {
+          console.log("hello");
+        },
+        greet: () => {
+          console.log("hello");
+        },
+        greet() {
+          console.log("hello");
+        },
+      };
+
+      const keysOfObject = Object.keys(studentInfo);
+      const valuesOfObject = Object.values(studentInfo);
+      const entriesOfObject = Object.entries(studentInfo);
+
+      //   console.log(studentInfo);
+      //   console.log(keysOfObject, keysOfObject.length);
+      //   console.log(valuesOfObject, valuesOfObject.length);
+      //   console.log(entriesOfObject, entriesOfObject.length);
+      //   console.log(studentInfo.hasOwnProperty("name"));
+      //   console.log(studentInfo.hasOwnProperty("age"));
+      //   console.log(studentInfo.hasOwnProperty("FullName"));
+      //   console.log(Object.fromEntries(entriesOfObject));
+
+      //   Object.freeze(studentInfo);
+      //   Object.seal(studentInfo);
+
+      //   studentInfo.age = 40;
+      //   studentInfo.abc = "abc";
+
+      //   delete studentInfo.greet;
+
+      //   console.log(Object.isFrozen(studentInfo));
+      //   console.log(studentInfo, Object.isSealed(studentInfo));
+
+      // array methods in JS
+
+      const cars = ["Saab", "Volvo", "BMW"];
+      const cars1 = ["Saab1", "Volvo1", "BMW1"];
+      const cars2 = ["Saab2", "Volvo2", "BMW2"];
+      const cars3 = ["Saab3", "Volvo2", "BMW2"];
+      const cars4 = ["Saab4", "Volvo4", "BMW4"];
+
+      //   console.log(cars[0], cars[cars.length - 1]);
+      //   console.log(cars.at(0), cars.at(-1));
+
+      const combinedCars = cars1.concat(cars, cars2, cars3, cars4);
+      //   const combinedCars = [cars1].concat([cars], [cars2], [cars3], [cars4]);
+      //   console.log(combinedCars);
+
+      //   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //   const f = fruits.entries();
+      //   console.log(f);
+      //   for (let fruit of f) {
+      //     console.log(fruit, fruit[0], fruit[1]);
+      //   }
+
+      //   const ages = [32, 33, 26, 40];
+      //   const ages = [2, 3, 6, 4];
+
+      //   function checkAge(age) {
+      //     return age > 18;
+      //   }
+      //   const checkAge = (item, index, array) => {
+      //     console.log(item, index, array);
+      //     return item > 18;
+      //   };
+
+      //   ages.every((item, index, array) => {
+      //     console.log(item, index, array);
+      //     return item > 18;
+      //   });
+      //   const every = ages.every(function (item, index, array) {
+      //     console.log(item, index, array);
+      //     return item > 18;
+      //   });
+      //   console.log(every);
+
+      //   const some = ages.some(function (item, index, array) {
+      //     console.log(item, index, array);
+      //     return item > 18;
+      //   });
+
+      //   console.log(some);
+
+      const ages = [32, 33, 16, 40];
+      const students = [
+        { name: "hasnain", age: 18, id: 1 },
+        { name: "ali", age: 20, id: 2 },
+        { name: "haider", age: 23, id: 3 },
+      ];
+
+      //   function checkAdult(age) {
+      //     return age >= 18;
+      //   }
+
+      function checkAdult(student, index, array) {
+        console.log(student, index, array);
+        return student.id === 2;
+      }
+
+      //   const filteredAges = ages.filter(checkAdult);
+      //   const filteredStudents = students.filter(checkAdult);
+      //   const findStudent = students.find(checkAdult);
+
+      //   console.log(ages, filteredAges);
+      //   console.log(filteredStudents[0]);
+      //   console.log(findStudent);
+
+      //   class Abc {
+      //     checkAgeA(age) {
+      //       return age > 18;
+      //     }
+
+      //     checkAgeB = (age) => {
+      //       return age > 18;
+      //     };
+      //   }
+
+      //   console.log(checkAge);
+      //   console.log(checkAge());
+
+      //   const numbers = [65, 44, 12, 4];
+      //   const newArr = numbers.map(myFunction);
+
+      //   console.log(numbers);
+      //   console.log(newArr);
+
+      //   function myFunction(num) {
+      //     return num ** num;
+      //   }
+
+      //   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //   fruits.push("Kiwi", "abc");
+      //   fruits.pop();
+      //   fruits.pop();
+
+      //   fruits.shift();
+      //   fruits.shift();
+      //   fruits.unshift("abc");
+    </script>
+  </body>
+</html>
